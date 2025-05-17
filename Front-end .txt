@@ -1,0 +1,21 @@
+Frontend HTML/JS
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Assistant</title>
+</head>
+<body>
+    <h2>Healthcare Assistant</h2>
+    <input id="input" placeholder="Describe your symptoms">
+    <button onclick="getResponse()">Submit</button>
+    <p id="response"></p>
+
+    <script>
+        function getResponse() {
+            let userInput = document.getElementById("input").value;
+            document.getElementById("response").innerText = "Sending data to backend (simulation)...";
+        }
+    </script>
+</body>
+</html>

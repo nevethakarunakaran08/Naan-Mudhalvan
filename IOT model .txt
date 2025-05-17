@@ -1,0 +1,21 @@
+IoT Module Code
+# iot_module/sensor_reader.py
+
+import random
+import time
+
+def read_heart_rate():
+    return random.randint(60, 100)
+
+def read_temperature():
+    return round(random.uniform(36.0, 37.5), 1)
+
+def read_oxygen_saturation():
+    return random.randint(95, 100)
+
+if __name__ == "__main__":
+    while True:
+        print("Heart Rate:", read_heart_rate())
+        print("Temperature:", read_temperature())
+        print("SpO2:", read_oxygen_saturation())
+        time.sleep(5)
